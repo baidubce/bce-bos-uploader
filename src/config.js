@@ -24,6 +24,10 @@ var kDefaultOptions = {
     // 默认的 ak 和 sk 配置
     bos_credentials: null,
 
+    // 为了解决客户端时间有偏差导致签名无效，提供时间偏移量参数来校准时间
+    // 单位`秒`, `最终计算签名的时间` = `本地时间` + `server_time_diff`
+    server_time_diff: 0,
+
     // 如果切换到 appendable 模式，最大只支持 5G 的文件
     // 不再支持 Multipart 的方式上传文件
     bos_appendable: false,

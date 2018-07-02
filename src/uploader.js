@@ -274,9 +274,11 @@ Uploader.prototype._init = function () {
         if (options.bos_credentials) {
             self.client.createSignature = function (_, httpMethod, path, params, headers) {
                 var credentials = _ || this.config.credentials;
+                var timestamp = ~~(Date.now() / 1000) + options.server_time_diff
+
                 return sdk.Q.fcall(function () {
                     var auth = new sdk.Auth(credentials.ak, credentials.sk);
-                    return auth.generateAuthorization(httpMethod, path, params, headers);
+                    return auth.generateAuthorization(httpMethod, path, params, headers, timestamp);
                 });
             };
         }

@@ -68,6 +68,7 @@ var uploader = new baidubce.bos.Uploader({
 |bos_endpoint|N|http://bos.bj.baidubce.com|BOS服务器的地址|
 |bos_ak|N|无|如果没有设置`uptoken_url`的话，必须有`ak`和`sk`这个配置才可以工作|
 |bos_sk|N|无|如果没有设置`uptoken_url`的话，必须有`ak`和`sk`这个配置才可以工作|
+|server_time_diff|N|0|单位：`秒`，`最终时间` = `本地时间` + `校对时间差` ，用于解决本地时间与服务器时间偏差过大引起签名校验失败的问题|
 |bos_appendable|N|false|是否采用Append的方式上传文件**不支持IE低版本**|
 |bos_task_parallel|N|3|队列中文件并行上传的个数|
 |uptoken|N|无|sts token的内容|
