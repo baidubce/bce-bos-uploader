@@ -3,7 +3,8 @@
   "description": "Baidu Cloud Engine BOS Uploader",
   "main": "bce-bos-uploader.bundle.js",
   "authors": [
-    "leeight <leeight@gmail.com>"
+    "leeight <leeight@gmail.com>",
+    "木休大人 <523317421@qq.com>"
   ],
   "license": "MIT",
   "keywords": [
@@ -12,7 +13,7 @@
     "uploader"
   ],
   "moduleType": [],
-  "homepage": "https://github.com/leeight/bce-bos-uploader",
+  "homepage": "https://github.com/mudio/bce-bos-uploader",
   "ignore": [
     "**/.*",
     "node_modules",

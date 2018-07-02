@@ -1,33 +1,38 @@
 {
-  "name": "bce-bos-uploader",
-  "version": "1.3.7",
+  "name": "@baiducloud/bos-uploader",
+  "version": "1.3.8",
   "description": "Baidu Object Storage Uploader",
   "main": "index.js",
   "scripts": {
     "test": "node_modules/.bin/mocha -C test",
     "fecs": "fecs src test index.js",
     "pack": "node_modules/.bin/browserify index.js -d -s baidubce -t es3ify -p bundle-collapser/plugin -o bce-bos-uploader.bundle.js",
-    "minify": "closure-compiler --js bce-bos-uploader.bundle.js | uglifyjs --compress --mangle -o bce-bos-uploader.bundle.min.js"
+    "minify": "google-closure-compiler --js bce-bos-uploader.bundle.js | uglifyjs --compress --mangle -o bce-bos-uploader.bundle.min.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/leeight/bce-bos-uploader.git"
+    "url": "https://github.com/mudio/bce-bos-uploader.git"
   },
-  "author": "leeight@gmail.com",
+  "authors": [
+    "leeight <leeight@gmail.com>",
+    "木休大人 <523317421@qq.com>"
+  ],
   "license": "ISC",
   "dependencies": {
-    "async": "^1.5.2",
-    "bce-sdk-js": "^0.2.3",
-    "debug": "^2.2.0",
-    "spark-md5": "^2.0.2",
-    "underscore": "^1.8.3"
+    "async": "^2.6.1",
+    "bce-sdk-js": "^0.2.9",
+    "debug": "^3.1.0",
+    "spark-md5": "^3.0.0",
+    "underscore": "^1.9.1"
   },
   "devDependencies": {
     "browserify": "10.2.6",
-    "bundle-collapser": "^1.2.1",
-    "es3ify": "^0.2.1",
+    "bundle-collapser": "^1.3.0",
+    "es3ify": "^0.2.2",
     "expect.js": "^0.3.1",
-    "http-proxy": "^1.13.2",
-    "mocha": "^2.4.5"
+    "google-closure-compiler": "^20180610.0.2",
+    "http-proxy": "^1.17.0",
+    "mocha": "^5.2.0",
+    "uglify-js": "^3.4.2"
   }
 }
