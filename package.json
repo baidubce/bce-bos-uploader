@@ -1,6 +1,6 @@
 {
   "name": "@baiducloud/bos-uploader",
-  "version": "1.3.8",
+  "version": "1.3.9",
   "description": "Baidu Object Storage Uploader",
   "main": "index.js",
   "scripts": {
