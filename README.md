@@ -13,8 +13,8 @@ DEMO地址：<http://leeight.github.io/bce-bos-uploader/>
 
 ### 如何使用
 
-```
-bower install bce-bos-uploader
+```shell
+npm install @baiducloud/bos-uploader
 ```
 
 写一个最简单的页面：
