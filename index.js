@@ -14,7 +14,7 @@
  * @author leeight
  */
 
-var sdk = require('bce-sdk-js');
+var sdk = require('@baiducloud/sdk');
 
 var Uploader = require('./src/uploader');
 var utils = require('./src/utils');

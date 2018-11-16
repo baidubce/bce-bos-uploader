@@ -18,7 +18,7 @@ var urlModule = require('url');
 var qsModule = require('querystring');
 
 var u = require('underscore');
-var sdk = require('bce-sdk-js');
+var sdk = require('@baiducloud/sdk');
 var SparkMD5 = require('spark-md5');
 
 var Queue = require('./queue');
@@ -191,7 +191,7 @@ exports.generateLocalKey = function (option, generator) {
 
 /**
  * 基于 SparkMD5 来快速的计算 blob 的md5
- * 貌似直接使用 bce-sdk-js/src/crypto 里面的 md5blob，对于 300M 的文件，Chrome 直接
+ * 貌似直接使用 @baiducloud/sdk/src/crypto 里面的 md5blob，对于 300M 的文件，Chrome 直接
  * 挂掉了
  *
  * @param {Blob} file 需要计算md5的文件内容.

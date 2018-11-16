@@ -2,7 +2,7 @@ var http = require('http');
 var url = require('url');
 var util = require('util');
 
-var sdk = require('bce-sdk-js');
+var sdk = require('@baiducloud/sdk');
 
 var kCredentials = {
     // ak: 'b92ea4a39f3645c8ae5f64ba5fc2a357',

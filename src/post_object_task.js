@@ -15,7 +15,7 @@
  */
 
 var u = require('underscore');
-var sdk = require('bce-sdk-js');
+var sdk = require('@baiducloud/sdk');
 
 var utils = require('./utils');
 var events = require('./events');

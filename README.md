@@ -1,10 +1,8 @@
 ### Baidu Cloud Engine BOS Uploader
 
-bce-bos-uploader 是基于 [bce-sdk-js](https://github.com/baidubce/bce-sdk-js) 开发的一个 ui 组件，易用性更好。
+bce-bos-uploader 是基于 [@baiducloud/sdk](https://github.com/baidubce/bce-sdk-js) 开发的一个 ui 组件，易用性更好。
 
-DEMO地址：<http://leeight.github.io/bce-bos-uploader/>
-
-如果对体积有严格的要求，可以考虑使用 [lite 版本](https://github.com/leeight/bce-bos-uploader-lite)
+如果对体积有严格的要求，可以考虑使用 [lite 版本](https://github.com/baidubce/bce-bos-uploader-lite)
 
 ### 支持的浏览器
 

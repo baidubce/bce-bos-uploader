@@ -14,7 +14,7 @@
  * @author leeight
  */
 
-var sdk = require('bce-sdk-js');
+var sdk = require('@baiducloud/sdk');
 var expect = require('expect.js');
 
 var StsTokenManager = require('../src/sts_token_manager');
