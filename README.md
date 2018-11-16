@@ -23,11 +23,11 @@ npm install @baiducloud/bos-uploader
   <head>
     <meta charset="utf-8" />
     <title>bce-bos-uploader simple demo</title>
-    <!--[if lt IE 8]><script src="./bower_components/json3/lib/json3.min.js"></script><![endif]-->
-    <!--[if lt IE 9]><script src="./bower_components/js-polyfills/es5.js"></script><![endif]-->
-    <!--[if lt IE 10]><script src="./bower_components/moxie/bin/js/moxie.js"></script><![endif]-->
-    <script src="./bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="./bower_components/bce-bos-uploader/bce-bos-uploader.bundle.js"></script>
+    <!--[if lt IE 8]><script src="./node_modules/json3/lib/json3.min.js"></script><![endif]-->
+    <!--[if lt IE 9]><script src="./node_modules/js-polyfills/es5.js"></script><![endif]-->
+    <!--[if lt IE 10]><script src="./node_modules/moxie/bin/js/moxie.js"></script><![endif]-->
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./node_modules/@baiducloud/bos-uploader/dist/bce-bos-uploader.bundle.js"></script>
   </head>
   <body>
     <input type="file" id="file"
