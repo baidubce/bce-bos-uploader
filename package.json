@@ -9,7 +9,7 @@
     "clean": "rm -rf dist && mkdir dist",
     "pack": "npm run clean && node_modules/.bin/browserify index.js -d -s baidubce -t es3ify -p bundle-collapser/plugin -o dist/bce-bos-uploader.bundle.js",
     "minify": "google-closure-compiler --js dist/bce-bos-uploader.bundle.js | uglifyjs --compress --mangle -o dist/bce-bos-uploader.bundle.min.js",
-    "publish": "node ./publish/publish.js"
+    "publish:bos": "node ./publish/publish.js"
   },
   "repository": {
     "type": "git",

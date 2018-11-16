@@ -18,4 +18,4 @@ env:
 install:
 - npm install @baiducloud/sdk
 script:
-- npm run publish
+- npm run publish:bos
