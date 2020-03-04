@@ -19,7 +19,6 @@ var u = require('underscore');
 var debug = require('debug')('bce-bos-uploader');
 
 var utils = require('./utils');
-var tracker = require('./tracker');
 var events = require('./events');
 var kDefaultOptions = require('./config');
 var PutObjectTask = require('./put_object_task');
@@ -188,10 +187,6 @@ Uploader.prototype._invoke = function (methodName, args, throwErrors) {
 Uploader.prototype._init = function () {
     var options = this.options;
     var accept = options.accept;
-
-    if (options.tracker_id) {
-        tracker.init(options.tracker_id);
-    }
 
     var btnElement = $(options.browse_button);
     var nodeName = btnElement.prop('nodeName');
